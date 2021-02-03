@@ -7,7 +7,7 @@
 }
 
 h1, h2, h3, h4, h5, p, a {
-  font : normal 400 24px/1 'Poiret One', sans-serif;
+  font : normal 500 24px/1 'Poiret One', sans-serif;
   color: #3C403D;
   letter-spacing: -0.5px;
 }
@@ -67,7 +67,6 @@ h1 {
   z-index: -1;
   transition: all 0.5s;
   opacity: 0;
-  border-radius: 10px;
 }
 
 .nav-links ul li a:hover:after {
@@ -85,6 +84,11 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#btn {
+  border: 2px solid #39603D;
+  padding: 13px;
 }
 
 .slice {
