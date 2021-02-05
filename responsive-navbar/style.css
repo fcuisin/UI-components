@@ -6,21 +6,20 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, p, a {
+h1, h2, h3, h4, h5, p, a, ul, li {
   font : normal 500 24px/1 'Poiret One', sans-serif;
-  color: #3C403D;
+  color: #fff;
   letter-spacing: -0.5px;
 }
 
 body {
-  background: #DADED4;
+  background: #164A41;
 }
 
 nav {
-  height: 15vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  height: 15vh;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -34,23 +33,23 @@ h1 {
 }
 
 .nav-links {
-  width: 50%;
-}
-
-.nav-links ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-left: auto;
   list-style: none;
+  width: 50%;
+  height: 100%;
 }
 
-.nav-links ul li a {
+.nav-links li a {
   text-decoration: none;
   position: relative;
   padding: 15px;
+  font-weight: 800;
 }
 
-.nav-links ul li a:after {
+.nav-links li a:after {
   display: block;
   position: absolute;
   top: 0;
@@ -63,19 +62,19 @@ h1 {
   height: 1px;
   visibility: none;
   color: transparent;
-  background: #39603D;
+  background: #9DC88D;
   z-index: -1;
-  transition: all 0.5s;
+  transition: all 0.8s;
   opacity: 0;
 }
 
-.nav-links ul li a:hover:after {
+.nav-links li a:hover:after {
   opacity: 1;
   visibility: visible;
   height: 100%;
 }
 
-.nav-links ul li a:hover {
+.nav-links li a:hover {
   color: #fff;
 }
 
@@ -87,10 +86,64 @@ h1 {
 }
 
 #btn {
-  border: 2px solid #39603D;
+  border: 2px solid #9DC88D;
   padding: 13px;
 }
 
-.slice {
-  display: none;
+@media screen and (max-width: 768px) {
+
+  nav {
+    position: relative;
+    padding: 0;
+    align-items: unset;
+  }
+
+  .nav-links {
+    position: fixed;
+    align-items: center;
+    background: #3C403D;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100vh;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+
+  .nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+
+  .nav-links li a{
+    color: #fff;
+  }
+
+  .nav-links li a:after {
+    width: 160px;
+  }
+
+  .slice {
+    position: absolute;
+    cursor: pointer;
+    right: 10%;
+    top: 50%;
+    z-index: 2;
+  }
+
+  .line {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin: 5px;
+  }
+
+  #btn {
+    background: #9DC88D;
+    color: #3C403D;
+  }
+
 }
