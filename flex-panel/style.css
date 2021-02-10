@@ -59,7 +59,7 @@ html {
 }
 
 .panel.open {
-  flex: 0 0 50%;
+  flex: 5;
 }
 
 .panel > *:first-child { transform: translateY(-100%);}
@@ -76,8 +76,4 @@ html {
 
 .panel p:nth-child(2) {
   font-size: 4em;
-}
-
-.panel.open {
-  font-size: 40px;
 }
