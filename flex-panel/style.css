@@ -17,6 +17,7 @@ html {
 .panels {
   min-height: 100vh;
   overflow: hidden;
+  display: flex;
 }
 
 .panel {
@@ -34,20 +35,37 @@ html {
   font-size: 20px;
   background-size: cover;
   background-position: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.panel1 { background-image:url(https://source.unsplash.com/1600x900/?nature,water); }
-.panel2 { background-image:url(https://source.unsplash.com/1600x900/?mountain); }
+.panel1 { background-image:url(https://source.unsplash.com/1600x900/?holland); }
+.panel2 { background-image:url(https://source.unsplash.com/1600x900/?peru); }
 .panel3 { background-image:url(https://source.unsplash.com/1600x900/?iceland); }
-.panel4 { background-image:url(https://source.unsplash.com/1600x900/?sea); }
-.panel5 { background-image:url(https://source.unsplash.com/1600x900/?jungle); }
+.panel4 { background-image:url(https://source.unsplash.com/1600x900/?sweden); }
+.panel5 { background-image:url(https://source.unsplash.com/1600x900/?usa); }
 
 /* Flex Children */
 .panel > * {
   margin: 0;
   width: 100%;
   transition: transform 0.5s;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.panel.open {
+  flex: 0 0 50%;
+}
+
+.panel > *:first-child { transform: translateY(-100%);}
+.panel.active > *:first-child { transform: translateY(0%);}
+.panel > *:last-child { transform: translateY(100%);}
+.panel.active > *:last-child { transform: translateY(0%);}
 
 .panel p {
   text-transform: uppercase;
