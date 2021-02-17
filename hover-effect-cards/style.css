@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: #FBFBFE;
+  font : normal 500 24px/1 'Poiret One', sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: -0.5px;
+}
+
+header {
+  margin: 0 auto;
+  padding: 4em 1em;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
