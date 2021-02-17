@@ -108,6 +108,15 @@ header {
   transform: scale(0.8);
 }
 
+.card__border a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
 /* Smallest device */
 @media (min-width: 100px) and (max-width: 575px) {
   .cards {
