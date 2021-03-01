@@ -34,6 +34,11 @@ input[type="checkbox"]:checked {
   background-color: #00EA90;
 }
 
+input:checked + p {
+  background: #e0e0e0;
+  text-decoration: line-through;
+}
+
 p {
   margin: 0;
   padding: 20px;
