@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+html {
+  background-color: #28527a;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.left-side {
+  height: 50vh;
+  flex-grow: 1;
+  flex-basis: 100%;
+  background-color: #f4d160;
+  border: 2px solid #8ac4d0;
+}
+
+.right-side {
+  height: 50vh;
+  flex-grow: 1;
+  flex-basis: 100%;
+  background-color: #f4d160;
+  border: 2px solid #8ac4d0;
+}
+
+.draggable-element {
+  background-color: red;
+  margin: 20px;
+  cursor: move;
+}
+
