@@ -12,15 +12,7 @@ html {
   height: 100vh;
 }
 
-.left-side {
-  height: 50vh;
-  flex-grow: 1;
-  flex-basis: 100%;
-  background-color: #f4d160;
-  border: 2px solid #8ac4d0;
-}
-
-.right-side {
+.side {
   height: 50vh;
   flex-grow: 1;
   flex-basis: 100%;
@@ -32,5 +24,9 @@ html {
   background-color: red;
   margin: 20px;
   cursor: move;
+}
+
+.draggable-element.dragging {
+  opacity: 0.4;
 }
 
