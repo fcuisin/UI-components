@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
 
 html {
-  background-color: #28527a;
+  background-color: #1e212d;
+  font-family: Quicksand, sans-serif;
+}
+
+h2 {
+  margin: 20px;
+  text-align: center;
 }
 
 .container {
@@ -13,15 +19,19 @@ html {
 }
 
 .side {
-  height: 50vh;
+  height: 60vh;
   flex-grow: 1;
   flex-basis: 100%;
-  background-color: #f4d160;
-  border: 2px solid #8ac4d0;
+  background-color: #b68973;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .draggable-element {
-  background-color: red;
+  background-color: #faf3e0;
+  border-radius: 5px;
+  padding: 5px;
   margin: 20px;
   cursor: move;
 }
