@@ -6,14 +6,13 @@ html {
 }
 
 h2 {
-  margin: 20px;
   text-align: center;
 }
 
 .container {
   display: flex;
   align-items: center;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   height: 100vh;
 }
@@ -28,15 +27,32 @@ h2 {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
+.side-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.fas {
+  cursor: pointer;
+}
+
 .draggable-element {
   background-color: #faf3e0;
   border-radius: 5px;
   padding: 5px;
   margin: 20px;
-  cursor: move;
+  cursor: grab;
 }
 
 .draggable-element.dragging {
   opacity: 0.4;
+}
+
+@media (max-width: 380px) {
+  .container {
+    display: block;
+  }
 }
 
