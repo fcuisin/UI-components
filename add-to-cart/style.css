@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+html {
+  background-color: #fcf8e8;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Quicksand, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.card {
+  padding: 20px;
+  max-width: 300px;
+  background-color: #ecb390;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+}
+
+.add-items {
+  margin-top: 20px;
+}
+
+.add-items input {
+  padding: 10px;
+  outline: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.add-items input[type="submit"] {
+  background-color: #df7861;
+  font-family: Quicksand, sans-serif;
+  font-weight: 600;
+}
+
+input[type="text"]::placeholder {
+  font-family: Quicksand, sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-weight: 600;
+}
+
+.plates {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  list-style: none;
+}
+
+.plates li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  font-weight: 100;
+  display: flex;
+}
