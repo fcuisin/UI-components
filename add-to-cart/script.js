@@ -27,6 +27,15 @@ function createPlate(e) {
   this.reset();
 }
 
+function toggle(e) {
+  if(!e.target.matches('input')) return;
+  const element = e.target;
+  const index = element.dataset.index;
+  items[index].checked = !items[index].checked;
+  localStorage.setItem('items', JSON.stringify(items));
+}
+
 addItems.addEventListener('submit', createPlate);
+itemsList.addEventListener('click', toggle);
 
 renderPlates(items, itemsList);
