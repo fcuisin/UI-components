@@ -1,6 +1,6 @@
 const addItems = document.querySelector('.add-items');
 const itemsList = document.querySelector('.plates');
-const items = [];
+const items = JSON.parse(localStorage.getItem('items')) || [];
 
 function renderPlates(items = [], itemsList) {
 
@@ -23,7 +23,10 @@ function createPlate(e) {
   }
   items.push(item);
   renderPlates(items, itemsList);
+  localStorage.setItem('items', JSON.stringify(items));
   this.reset();
 }
 
 addItems.addEventListener('submit', createPlate);
+
+renderPlates(items, itemsList);
