@@ -61,9 +61,27 @@ input[type="text"]::placeholder {
   list-style: none;
 }
 
+.plates label {
+  flex: 1;
+  cursor: pointer;
+}
+
+.plates input {
+  display: none;
+}
+
 .plates li {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   padding: 10px 0;
   font-weight: 100;
   display: flex;
+}
+
+.plates input + label:before {
+  content: "🍴";
+  margin-right: 10px;
+}
+
+.plates input:checked + label:before {
+  content: "🍪";
 }
