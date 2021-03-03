@@ -11,18 +11,20 @@ h2 {
 
 .container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   max-width: 1000px;
   margin: 0 auto;
   height: 100vh;
 }
 
 .side {
-  height: 60vh;
+  min-height: 60vh;
+  height: auto;
   flex-grow: 1;
   flex-basis: 100%;
   background-color: #b68973;
   margin: 10px;
+  margin-top: ;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
@@ -48,6 +50,10 @@ h2 {
 
 .draggable-element.dragging {
   opacity: 0.4;
+}
+
+.y {
+  font-size: 200px;
 }
 
 @media (max-width: 380px) {
