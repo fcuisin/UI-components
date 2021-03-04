@@ -28,12 +28,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 300px;
+  width: 350px;
   height: 100px;
   padding: 20px;
   border-radius: 5px;
-  background: white;
-  transition: all 0.5s ease;
+  background-color: #e6d5b8;
+  transition: all 0.7s ease;
+  font-family: Space Mono, sans-serif;
 }
 
 .field-name i,
@@ -46,6 +47,7 @@ body {
 .field-name input,
 .field-email input,
 .field-phone input {
+  background-color: #e6d5b8;
   border: 0;
   outline: 0;
   padding: 10px;
@@ -53,8 +55,18 @@ body {
   font-family: Space Mono, sans-serif;
 }
 
+.fas {
+
+}
+
 div.innactive {
   opacity: 0;
   pointer-events: none;
   transform: translate(-50%, 50%);
+}
+
+div.active {
+  opacity: 1;
+  pointer-events: all;
+  transform: translate(-50%, -50%);
 }
