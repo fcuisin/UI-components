@@ -10,6 +10,8 @@ function animatedForm() {
     nextField(parent, nextDiv);
   } else if (input.type === "email" && validationEmail(input)) {
     nextField(parent, nextDiv);
+  } else if (input.name === "job" && validationJob(input)) {
+    nextField(parent, nextDiv);
   }
 
 }
@@ -30,6 +32,14 @@ function validationEmail(email) {
   const regex = /^\S+@\S+\.\S+$/;
 
   if (regex.test(email.value)) {
+    return true;
+  }
+
+}
+
+function validationJob(job) {
+
+  if (job.value !== "") {
     return true;
   }
 

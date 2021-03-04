@@ -19,7 +19,7 @@ body {
 
 .field-name,
 .field-email,
-.field-phone,
+.field-job,
 .end {
   position: absolute;
   top: 50%;
@@ -28,7 +28,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 350px;
+  width: 400px;
   height: 100px;
   padding: 20px;
   border-radius: 5px;
@@ -37,16 +37,21 @@ body {
   font-family: Space Mono, sans-serif;
 }
 
+.gift {
+  display: flex;
+  justify-content: center;
+}
+
 .field-name i,
 .field-email i,
-.field-phone i {
+.field-job i {
   cursor: pointer;
   padding: 10px;
 }
 
 .field-name input,
 .field-email input,
-.field-phone input {
+.field-job input {
   background-color: #eabf9f;
   border: 0;
   outline: 0;
@@ -55,11 +60,11 @@ body {
   font-family: Space Mono, sans-serif;
 }
 
-.fas {
+.fas-2x {
   color: #1e212d;
 }
 
-div.innactive {
+div.inactive {
   opacity: 0;
   pointer-events: none;
   transform: translate(-50%, 50%);
