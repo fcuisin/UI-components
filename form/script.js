@@ -50,9 +50,9 @@ function validationJob(job) {
 
 function nextField(parent, nextDiv) {
 
-  parent.classList.add("innactive");
+  parent.classList.add("inactive");
   parent.classList.remove("active");
-  nextDiv.classList.remove("innactive")
+  nextDiv.classList.remove("inactive")
   nextDiv.classList.add("active")
 
 }
