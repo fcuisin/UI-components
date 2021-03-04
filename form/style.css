@@ -16,3 +16,45 @@ body {
   position: relative;
   height: 100vh;
 }
+
+.field-name,
+.field-email,
+.field-phone,
+.end {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  height: 100px;
+  padding: 20px;
+  border-radius: 5px;
+  background: white;
+  transition: all 0.5s ease;
+}
+
+.field-name i,
+.field-email i,
+.field-phone i {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.field-name input,
+.field-email input,
+.field-phone input {
+  border: 0;
+  outline: 0;
+  padding: 10px;
+  flex: 1;
+  font-family: Space Mono, sans-serif;
+}
+
+div.innactive {
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 50%);
+}
