@@ -8,6 +8,8 @@ function animatedForm() {
 
   if (input.type === "text" && validationUser(input)) {
     nextField(parent, nextDiv);
+  } else if (input.type === "email" && validationEmail(input)) {
+    nextField(parent, nextDiv);
   }
 
 }
@@ -18,6 +20,16 @@ function validationUser(input) {
     input.parentElement.style.backgroundColor = "#eabf9f";
     input.style.backgroundColor = "f0a500";
   } else {
+    return true;
+  }
+
+}
+
+function validationEmail(email) {
+
+  const regex = /^\S+@\S+\.\S+$/;
+
+  if (regex.test(email.value)) {
     return true;
   }
 
