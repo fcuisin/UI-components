@@ -75,3 +75,25 @@ div.active {
   pointer-events: all;
   transform: translate(-50%, -50%);
 }
+
+@keyframes shaking {
+
+  0% {
+
+    transform: translate(-50%, -50%) rotate(0deg);
+
+  }
+
+  50% {
+
+    transform: translate(-50%, -50%) rotate(20deg);
+
+  }
+
+  100% {
+
+    transform: translate(-50%, -50%) rotate(0deg);
+
+  }
+
+}

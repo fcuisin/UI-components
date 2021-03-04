@@ -12,16 +12,19 @@ function animatedForm() {
     nextField(parent, nextDiv);
   } else if (input.name === "job" && validationJob(input)) {
     nextField(parent, nextDiv);
+  } else {
+    parent.style.animation = "shaking 0.3s ease";
   }
+
+  parent.addEventListener('animationend', () => {
+    parent.style.animation = "";
+  })
 
 }
 
 function validationUser(input) {
 
-  if (input.value === "" || input.value.length < 6) {
-    input.parentElement.style.backgroundColor = "#eabf9f";
-    input.style.backgroundColor = "f0a500";
-  } else {
+  if (input.value !== "" && input.value.length > 6) {
     return true;
   }
 
