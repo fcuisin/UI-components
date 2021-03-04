@@ -1,16 +1,16 @@
 const arrows = document.querySelectorAll(".fa-arrow-right");
 
-arrows.forEach((arrow) => {
-  arrow.addEventListener('click', () => {
-    const input = arrow.previousElementSibling;
-    const parent = arrow.parentElement;
-    const nextDiv = parent.nextElementSibling;
-    console.log(nextDiv);
-    if (input.value !== "") {
-      parent.classList.add("innactive");
-      parent.classList.remove("active");
-      nextDiv.classList.remove("innactive")
-      nextDiv.classList.add("active")
-    }
-  });
-});
+function animatedForm() {
+  const input = this.previousElementSibling;
+  const parent = this.parentElement;
+  const nextDiv = parent.nextElementSibling;
+
+  if (input.value !== "") {
+    parent.classList.add("innactive");
+    parent.classList.remove("active");
+    nextDiv.classList.remove("innactive")
+    nextDiv.classList.add("active")
+  }
+}
+
+arrows.forEach((arrow) => arrow.addEventListener('click', animatedForm));
