@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+html {
+  background-color: #1e212d;
+  font-family: Quicksand, sans-serif;
+}
+
+h2 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.side {
+  min-height: 60vh;
+  height: auto;
+  flex-grow: 1;
+  flex-basis: 100%;
+  background-color: #b68973;
+  margin: 10px;
+  margin-top: ;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.side-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.fas {
+  cursor: pointer;
+}
+
+.draggable-element {
+  background-color: #faf3e0;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 20px;
+  cursor: grab;
+}
+
+.draggable-element.dragging {
+  opacity: 0.4;
+}
+
+.y {
+  font-size: 200px;
+}
+
+@media (max-width: 380px) {
+  .container {
+    display: block;
+  }
+}
+
