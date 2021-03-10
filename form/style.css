@@ -7,12 +7,93 @@
 }
 
 body {
-  background-color: #4a3933;
-  transition: background 2s ease;
+  background-color: #1e212d;
+  transition: background 1s ease;
 }
 
 .container {
   display: flex;
   position: relative;
   height: 100vh;
+}
+
+.field-name,
+.field-email,
+.field-job,
+.end {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  height: 100px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #eabf9f;
+  transition: all 0.5s ease;
+  font-family: Space Mono, sans-serif;
+}
+
+.gift {
+  display: flex;
+  justify-content: center;
+}
+
+.field-name i,
+.field-email i,
+.field-job i {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.field-name input,
+.field-email input,
+.field-job input {
+  background-color: #eabf9f;
+  border: 0;
+  outline: 0;
+  padding: 10px;
+  flex: 1;
+  font-family: Space Mono, sans-serif;
+}
+
+.fas-2x {
+  color: #1e212d;
+}
+
+div.inactive {
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 50%);
+}
+
+div.active {
+  opacity: 1;
+  pointer-events: all;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes shaking {
+
+  0% {
+
+    transform: translate(-50%, -50%) rotate(0deg);
+
+  }
+
+  50% {
+
+    transform: translate(-50%, -50%) rotate(20deg);
+
+  }
+
+  100% {
+
+    transform: translate(-50%, -50%) rotate(0deg);
+
+  }
+
 }
